@@ -11,9 +11,6 @@ import { resetResultAction } from '../redux/result_reducer'
 /* Chart result */
 import Chart from "./chart"
 
-import QR_redirect from './QR_redirect'
-
-
 export default function ISO_271_res() {
 
   const dispatch = useDispatch()
@@ -68,7 +65,6 @@ export default function ISO_271_res() {
           <Link className='w-80 text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800' to={'/'} onClick={onRestart}>Reattempt to the checklist </Link>
         </div>
 
-        <QR_redirect/>
 
         {/*<div className="container mt-7">
           <ResultTable271 />
