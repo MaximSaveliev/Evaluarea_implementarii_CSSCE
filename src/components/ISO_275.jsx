@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Modal from './Modal';
+import QR_redirect from './QR_redirect';
 
 import vulnerabilities from '../database/vulnerabilities'
 
@@ -53,7 +55,7 @@ export default function ISO_275() {
         <div id='vulnerabilityTable' className='relative overflow-x-auto scrollbar-thumb-blue-500 scrollbar-track-gray-300'>
           <table className="w-full text-sm text-center text-gray-500 dark:text-gray-400">
             <caption className="p-5 text-lg font-semibold text-left text-gray-900 bg-white dark:text-white dark:bg-gray-800">
-              
+
               <div className='inline-block'>Abbreviations:
                 <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">TP - Threat Probability (what is likelihood of the incident)</p>
                 <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">VL - Vulnerability Level (how easy to exploit)</p>
@@ -186,7 +188,7 @@ export default function ISO_275() {
                       </div>
                     </td>
                     <td className="px-3 pr-6 py-4 min-w-[100px]">
-                      <button type="button" className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Advice</button>
+                      <Modal adviceList={vulnerability.advice} prompt={vulnerability.prompt} />
                     </td>
                   </tr>
                 );
@@ -197,6 +199,7 @@ export default function ISO_275() {
         <div className='flex justify-center my-7'>
           <Link className='w-80 text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800' to={'/'} onClick={onRestart}>Reattempt to the checklist </Link>
         </div>
+        <QR_redirect />
       </div>
     </>
   )

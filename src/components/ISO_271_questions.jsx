@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 /* Custom hook */
 import { useFetchQuestion } from '../hooks/fetchQuestion'
 import { updateResult } from '../hooks/setResult'
+import QR_redirect from './QR_redirect'
 
 export default function ISO_271_questions({ onChecked }) {
 
@@ -66,6 +67,7 @@ export default function ISO_271_questions({ onChecked }) {
                     <button onClick={onSelect_NO} className='bg-red-500 rounded'>No</button>
                 </div>*/}
             </div>
+            <QR_redirect/>
         </>
     )
 }

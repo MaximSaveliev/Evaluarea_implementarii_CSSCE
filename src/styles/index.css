@@ -3,30 +3,30 @@
 @tailwind utilities;
 
 /* Set the scrollbar width and height */
-#vulnerabilityTable::-webkit-scrollbar {
+#vulnerabilityTable::-webkit-scrollbar, #advice_scroll::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 /* Set the scrollbar track color */
-#vulnerabilityTable::-webkit-scrollbar-track {
+#vulnerabilityTable::-webkit-scrollbar-track, #advice_scroll::-webkit-scrollbar-track {
   background: #f0f0f0;
   visibility: hidden;
   margin: 5px 3rem 5px 3rem;
 }
 
 /* Set the scrollbar thumb color */
-#vulnerabilityTable::-webkit-scrollbar-thumb {
+#vulnerabilityTable::-webkit-scrollbar-thumb, #advice_scroll::-webkit-scrollbar-thumb {
   background: #CBD5E1;
   border-radius: 9999px;
   visibility: hidden;
 }
 
 /* Set the scrollbar corner color */
-#vulnerabilityTable::-webkit-scrollbar-corner {
+#vulnerabilityTable::-webkit-scrollbar-corner, #advice_scroll::-webkit-scrollbar-corner {
   background: #f0f0f0;
 }
 
-#vulnerabilityTable:hover::-webkit-scrollbar-thumb{
+#vulnerabilityTable:hover::-webkit-scrollbar-thumb, #advice_scroll:hover::-webkit-scrollbar-thumb{
   visibility: visible;
 }
