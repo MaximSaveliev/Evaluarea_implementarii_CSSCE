@@ -9,7 +9,6 @@ import ISO_271 from './ISO_271'
 import ISO_275 from './ISO_275'
 import ISO_271_res from './ISO_271_res'
 import ISO_275_res from './ISO_275_res'
-import AdviceModal from './adviceModal'
 import { CheckCompanyExist } from '../helper/helper'
 
 /* react routers */
@@ -33,10 +32,6 @@ const router = createBrowserRouter([
   {
     path : '/ISO 27005 result',
     element : <CheckCompanyExist><ISO_275_res/></CheckCompanyExist>
-  },
-  {
-    path : '/chat',
-    element : <AdviceModal></AdviceModal>
   },
 ])
 
