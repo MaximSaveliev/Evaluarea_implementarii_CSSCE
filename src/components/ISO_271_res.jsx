@@ -10,7 +10,9 @@ import { resetResultAction } from '../redux/result_reducer'
 
 /* Chart result */
 import Chart from "./chart"
+
 import QR_redirect from './QR_redirect'
+
 
 export default function ISO_271_res() {
 
