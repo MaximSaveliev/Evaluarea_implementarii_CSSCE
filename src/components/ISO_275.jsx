@@ -179,7 +179,7 @@ export default function ISO_275() {
                           (rowData.risk <= 20 ? ' bg-green-500' : '') +
                           (20 < rowData.risk && rowData.risk <= 40 ? ' bg-orange-500' : '') +
                           (rowData.risk > 40 ? ' bg-red-500' : '') +
-                          (isNaN(rowData.risk) ? ' bg-gray-50' : '')
+                          (isNaN(rowData.risk) ? ' bg-white' : '')
                         }
                       >
                         {/*{rowData.risk ? parseFloat(rowData.risk).toFixed(2) + ' %' : ''}*/}
