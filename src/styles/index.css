@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Set the scrollbar width and height */
+#vulnerabilityTable::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Set the scrollbar track color */
+#vulnerabilityTable::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  visibility: hidden;
+  margin: 5px 3rem 5px 3rem;
+}
+
+/* Set the scrollbar thumb color */
+#vulnerabilityTable::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+  visibility: hidden;
+}
+
+/* Set the scrollbar corner color */
+#vulnerabilityTable::-webkit-scrollbar-corner {
+  background: #f0f0f0;
+}
+
+#vulnerabilityTable:hover::-webkit-scrollbar-thumb{
+  visibility: visible;
+}
