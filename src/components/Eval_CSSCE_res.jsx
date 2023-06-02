@@ -35,7 +35,7 @@ export default function Eval_CSSCE_res() {
   return (
     <>
       <div className='mx-[10%] md:mx-[15%] lg:mx-[15%] 2xl:mx-[25%]'>
-        <h1 className='text-3xl text-center my-7 text-gray-900 dark:text-gray-300'>Evaluarea implementarii CSSCE result</h1>
+        <h1 className='text-3xl text-center my-7 text-gray-900 dark:text-gray-300'>Evaluarea implementarii CSSCE raport</h1>
         <div className='grid w-full'>
           <div className='flex w-full justify-between py-[6px] px-3 border-b-[1px] hover:bg-slate-100/50'>
             <span className='font-medium text-gray-900 dark:text-gray-300'>Instituția</span>
@@ -51,7 +51,7 @@ export default function Eval_CSSCE_res() {
           </div>
           <div className='flex flex-col sm:flex-row w-full justify-between py-[6px] px-3 font-medium border-b-[1px] hover:bg-slate-100/50'>
             <span className='text-gray-900 dark:text-gray-300'>Nivelul de implementare a CSSCE</span>
-            <span className={`${flag ? 'text-green-500' : 'text-red-500'}`}>{flag ? "Company Passed ISO 27001 checklist" : "Company Failed ISO 27001 checklist"} {percent === "100.000" ? "100" : percent} %</span>
+            <span className={`${flag ? 'text-green-500' : 'text-red-500'}`}>Instituția DVS a implementat {percent === "100.000" ? "100" : percent} %</span>
           </div>
         </div>
 
