@@ -10,7 +10,7 @@ export default function QR_redirect() {
     return (
         <>
             <button type="button"
-                className="fixed bottom-5 right-5  w-[75px] h-[75px] text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-full text-sm text-center dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+                className="fixed bottom-5 right-5 w-[50px] h-[50px] md:w-[60px] md:h-[60px] text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-full text-sm text-center dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
                 onClick={() => setShowModal(true)}>
                 <FontAwesomeIcon icon={faQrcode} className='text-2xl' /></button>
             {showModal ? (
