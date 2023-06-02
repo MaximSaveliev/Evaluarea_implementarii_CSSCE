@@ -35,7 +35,7 @@ export default function chart() {
 
     useEffect(() => {
         setChartData({
-            labels: ["YES", "NO"],
+            labels: ["DA", "NU"],
             datasets: [
                 {
                     label: "Count",
