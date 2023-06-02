@@ -5,9 +5,9 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 /* import components */
 import ISO_type from './ISO_type'
-import ISO_271 from './ISO_271'
+import Eval_CSSCE from './Eval_CSSCE'
 import ISO_275 from './ISO_275'
-import ISO_271_res from './ISO_271_res'
+import Eval_CSSCE_res from './Eval_CSSCE_res'
 import ISO_275_res from './ISO_275_res'
 import { CheckCompanyExist } from '../helper/helper'
 
@@ -18,16 +18,16 @@ const router = createBrowserRouter([
     element : <ISO_type></ISO_type>
   },
   {
-    path : '/ISO 27001',
-    element : <CheckCompanyExist><ISO_271/></CheckCompanyExist>
+    path : '/Evaluarea_implementarii_CSSCE',
+    element : <CheckCompanyExist><Eval_CSSCE/></CheckCompanyExist>
   },
   {
     path : '/ISO 27005',
     element : <CheckCompanyExist><ISO_275/></CheckCompanyExist>
   },
   {
-    path : '/ISO 27001 result',
-    element : <CheckCompanyExist><ISO_271_res/></CheckCompanyExist>
+    path : '/Evaluarea_implementarii_CSSCE_result',
+    element : <CheckCompanyExist><Eval_CSSCE_res/></CheckCompanyExist>
   },
   {
     path : '/ISO 27005 result',
